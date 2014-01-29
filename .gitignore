@@ -8,3 +8,4 @@ tests/css
 *.swp
 .DS_Store
 doc/
+.idea/
