@@ -683,12 +683,12 @@ Ember.Table.Row = Ember.ObjectProxy.extend({
   * @instance
   */
 
-  isSelected: Ember.computed((function() {
+  isSelected: Ember.computed(function() {
     if (this.get('parentController.target.selection') === this.get('content')) {
       return true;
     }
     return this.get('parentController.selection') === this.get('content');
-  }).property('parentController.selection', 'content', 'parentController.target.selection')),
+  }).property('parentController.selection', 'content', 'parentController.target.selection'),
   /**
   * Is Showing?
   * @memberof Ember.Table.Row
